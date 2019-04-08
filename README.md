@@ -1,5 +1,7 @@
 /*  This sketch sets up a small OLED display and pulls analog signals from two sensors 
  * (HTM1735LF (RH && Temp) && MQ135(air quality --> SnO2 detects CO2 && VOC))
+ * A BME280 (I2C--> 0x76) was added to the project starting with the 04-07-2019 pre-release, I used 
+ * the library from sparkfun to drive this sensor and added the output to the display
  * 
  *  Requirements:
  *
