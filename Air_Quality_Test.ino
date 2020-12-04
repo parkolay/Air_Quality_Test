@@ -12,8 +12,6 @@
  * 
  *  // Pinout
  *  //  MQ135 analog Output --> A00
- *  //  RH Analog Output    --> A01
- *  //  Temp Analog Output  --> A02 Tied HIGH W/ 10k Ohm resistor 
  *  //  SCL                 --> A04
  *  //  SDA                 --> A05
  *   
@@ -66,19 +64,16 @@ void setup(void)
 void loop(void) 
 {
 
-  //UpdateRH();
-  //UpdateTemp();
-  UpdateMQ135();
-  DebugBMEData();
-  UpdateRTC();
+  UpdateMQ135();    //get Air Quality Data
+  DebugBMEData();   //Get BME Data (send out serial data with readings)
+  UpdateRTC();      //GEt time date data
 
-
-  delay(100);
+  delay(100);       
   u8g2.firstPage();
   do 
   {
 
-    UpdateDisplay();
+    UpdateDisplay()
   } 
   while ( u8g2.nextPage() );
   //delay(1000);
