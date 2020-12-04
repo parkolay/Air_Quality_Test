@@ -1,4 +1,4 @@
-*  This sketch sets up a small OLED display and pulls analog signals from two sensors 
+/*  This sketch sets up a small OLED display and pulls analog signals from two sensors 
  * (BME280 (RH && Temp && Press) && MQ135(air quality --> SnO2 detects CO2 && VOC))
  * an RTC has also been added to this project for later use. 
  * 
