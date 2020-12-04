@@ -73,7 +73,7 @@ void loop(void)
   do 
   {
 
-    UpdateDisplay()
+    UpdateDisplay();
   } 
   while ( u8g2.nextPage() );
   //delay(1000);
